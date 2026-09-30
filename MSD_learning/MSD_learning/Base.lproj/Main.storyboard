@@ -1,24 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MSD_learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V5B-n7-jle">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvs-7y-8F0" customClass="VideoBackgroundView" customModule="MSD_learning">
+                                <rect key="frame" x="-10" y="0.0" width="403" height="876"/>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalCentering" alignment="center" id="8FS-Ht-xBj">
+                                <rect key="frame" x="0.0" y="60" width="393" height="663"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1AW-Ba-Ajc" customClass="ScissorsView" customModule="MSD_learning" customModuleProvider="target">
+                                        <rect key="frame" x="136.66666666666666" y="0.0" width="119.99999999999997" height="120"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="TUm-XW-Kes"/>
+                                            <constraint firstAttribute="width" constant="120" id="jlo-aS-XzU"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="741" verticalCompressionResistancePriority="664" text="Твоя стрижка. Твой график." textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdR-ge-xVi">
+                                        <rect key="frame" x="22" y="313" width="349" height="33.666666666666686"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33.666666666666686" id="xtF-Cj-jFv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="702" text="Запись в один свайп" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Roq-hQ-2ff">
+                                        <rect key="frame" x="114.33333333333333" y="642.66666666666663" width="164.33333333333337" height="20.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="O9q-Hm-MWa"/>
+                                <constraints>
+                                    <constraint firstItem="vdR-ge-xVi" firstAttribute="leading" secondItem="O9q-Hm-MWa" secondAttribute="leading" constant="22" id="JdL-B4-w5X"/>
+                                    <constraint firstItem="O9q-Hm-MWa" firstAttribute="bottom" secondItem="vdR-ge-xVi" secondAttribute="bottom" constant="316.33333333333331" id="KIx-HO-Sfk"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFE-C2-4EH" customClass="GhostButton" customModule="MSD_learning" customModuleProvider="target">
+                                <rect key="frame" x="24" y="708" width="345" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="88V-xT-Gh5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Продолжить"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sbJ-eL-9bI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lvs-7y-8F0" firstAttribute="trailing" secondItem="8FS-Ht-xBj" secondAttribute="trailing" id="2Vi-Cz-1oB"/>
+                            <constraint firstItem="sbJ-eL-9bI" firstAttribute="trailing" secondItem="qFE-C2-4EH" secondAttribute="trailing" constant="24" id="QH5-C4-Vce"/>
+                            <constraint firstItem="lvs-7y-8F0" firstAttribute="top" secondItem="V5B-n7-jle" secondAttribute="top" id="awM-8I-TxL"/>
+                            <constraint firstItem="sbJ-eL-9bI" firstAttribute="bottom" secondItem="qFE-C2-4EH" secondAttribute="bottom" constant="24" id="edi-x2-F0J"/>
+                            <constraint firstItem="lvs-7y-8F0" firstAttribute="leading" secondItem="V5B-n7-jle" secondAttribute="leadingMargin" constant="-26" id="kzy-t9-QSY"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lvs-7y-8F0" secondAttribute="bottom" constant="-92" id="tJo-Vz-Mgw"/>
+                            <constraint firstItem="qFE-C2-4EH" firstAttribute="leading" secondItem="sbJ-eL-9bI" secondAttribute="leading" constant="24" id="vfl-5W-M9i"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="continueButton" destination="qFE-C2-4EH" id="fQS-6M-5mE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="130.98591549295776"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.53333333333333333" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
