@@ -2,8 +2,6 @@ import AVFoundation
 import UIKit
 
 final class VideoBackgroundView: UIView {
-	
-	@IBOutlet weak var videoBackground: VideoBackgroundView!
 
 	private let player = AVPlayer()
 
